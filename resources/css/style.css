@@ -10,19 +10,23 @@ body {
   color: #555;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 20px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
 
 .row {
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 3%;
+}
+
+section .row {
+  margin: 40px auto;
 }
 
 .section-title {
-  font-size: 300%;
-  margin-top: 20px;
+  font-size: 200%;
 }
 
 
@@ -47,15 +51,16 @@ header {
 
 .title-box h1 {
   padding-left: 3%;
-  font-size: 700%;
+  font-size: 400%;
   font-weight: 100;
-  letter-spacing: 50px;
-  border-bottom: 2px solid #e67e22;
+  font-kerning: none;
+  letter-spacing: 30px;
+  border-bottom: 1px solid #e67e22;
 }
 
-.title-box h5 {
-  letter-spacing: 20px;
-  margin: 20px 100px;
+.title-box h6 {
+  letter-spacing: 10px;
+  margin: 20px 50px;
 }
 
 
@@ -93,8 +98,9 @@ header {
 /***** ICONS *****/
 
 .icon-title {
-  margin: 30px 20px 0 20px;
   float: left;
+  font-size: 125%;
+  margin: 10px 10px 0 0;
   color: #e67e22;
 }
 
@@ -104,26 +110,27 @@ header {
 
 .my-profile {
   float: left;
-  width: 65%;
-  margin: 25px 0;
-  padding: 15px;
+  width: 66%;
 }
 
 .my-profile p {
+  margin: auto;
+  max-width: 500px;
   text-align: justify;
 }
 
 .my-picture {
   float: left;
-  width: 35%;
-  margin: 25px 0;
-  padding: 5%;
+  margin: auto;
+  padding: 50px 30px;
+  width: 34%;
 }
 
 .my-picture img {
   width: 100%;
+  max-width: 270px;
+  margin: auto;
+  box-shadow: 0px 4px #eee;
+  border: 1px solid #eee;
   border-radius: 50%;
-  border: 1px solid #ddd;
-  box-shadow: 0px 4px #ddd;
-
 }
