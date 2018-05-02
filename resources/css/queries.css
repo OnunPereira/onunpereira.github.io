@@ -51,4 +51,8 @@
     font-size: 150%;
     letter-spacing: 25px;
   }
+
+  .project-photo h2 {
+    font-size: 90%;
+  }
 }

@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -16,11 +15,12 @@ body {
   overflow-x: hidden;
 }
 
-.flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.flex { display: flex; }
 
-section { margin-bottom: 100px; }
+section { margin-bottom: 15%; }
+section:last-of-type { margin-bottom: 10%; }
 
-section:last-of-type { margin-bottom: 60px; }
+/* section:last-of-type { margin-bottom: 60px; } */
 
 .row {
   max-width: 1140px;
@@ -47,7 +47,6 @@ section:last-of-type { margin-bottom: 60px; }
 header {
   color: #fff;
   text-transform: upperCase;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))), url('img/header.jpeg');
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/header.jpeg');
   background-size: cover;
   background-position: center;
@@ -58,16 +57,14 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .title-box h1 {
   padding-left: 3%;
   font-size: 400%;
   font-weight: 100;
-  -webkit-font-kerning: none;
-          font-kerning: none;
+  font-kerning: none;
   letter-spacing: 30px;
   border-bottom: 1px solid #e67e22;
 }
@@ -98,7 +95,6 @@ header {
   text-decoration: none;
   font-size: 90%;
   border-bottom: 2px solid transparent;
-  -webkit-transition: border 0.2s;
   transition: border 0.2s;
   padding: 8px 0;
 }
@@ -123,18 +119,15 @@ header {
 
 /***** WHO AM I *****/
 
-.profile {
-  margin: auto 5%;
-}
+.profile { margin: 10% 5% 15% 5%; }
 
 .profile img {
   float: right;
   max-width: 200px;
   border-radius: 50%;
-  -webkit-box-shadow: 0 6px 40px rgba(0,0,0,0.3);
-          box-shadow: 0 6px 40px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 40px rgba(0,0,0,0.3);
   margin-right: 5%; 
-  margin-top: 1%;
+  margin-top: 25px;
 }
 
 .profile p {
@@ -142,11 +135,16 @@ header {
   width: 60%;
   text-align: justify;
   margin-top: 1%;
+  line-height: 150%;
 }
 
 
 
 /***** PROJECTS *****/
+
+.section-projects {
+  background-color: #333;
+}
 
 .showcase {
   list-style: none;
@@ -160,9 +158,7 @@ header {
   margin-left: 0.5%;
 }
 
-.showcase li:first-child {
-  margin-left: 0;
-}
+.showcase li:first-child { margin-left: 0; }
 
 .project-photo {
   position: relative;
@@ -175,24 +171,18 @@ header {
 .project-photo img {
   opacity: 0;
   width: 100%;
-  -webkit-transform: scale(1.10);
-          transform: scale(1.10);
-  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transform: scale(1.10);
   transition: opacity 0.5s, transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
 }
 
 .project-photo:hover img {
   opacity: 0.9;
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 .project-photo div {
   width: 100%;
   height: 100%;
-  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
@@ -205,13 +195,10 @@ header {
   font-weight: 100;
   text-align: center;
   text-transform: uppercase;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.project-photo:hover div {
-  opacity: 0;
-}
+.project-photo:hover div { opacity: 0; }
 
 
 
@@ -220,27 +207,25 @@ header {
 .media { 
   display: inline-block;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 10%;
 }
+
+.media-link { margin: 0 5px; }
 
 .media p {
-  display: inline;
-}
-
-.media-link {
-  margin: 0 5px;
+  margin-bottom: 5%;
 }
 
 .media-link i {
   position: relative;
   top: 15%;
   font-size: 200%;
+  margin-left: 20%;
 }
 
 .ion-social-github,
 .ion-social-linkedin {
   color: #555;
-  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
