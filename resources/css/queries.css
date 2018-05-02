@@ -1,25 +1,54 @@
 @media only screen and (max-width: 1200px) {
-  .row { padding: 0 5%; }
+  .row { padding: 0 2%; }
 }
 
 @media only screen and (max-width: 1023px) {
 
-  body { font-size: 17px; }
+  body { font-size: 18px; }
 
   .main-nav li {
     margin-left: 0;
   }
 
-  .my-picture img {
-    max-width: 220px;
+  .profile img {
+    max-width: 180px;
   }
-
 }
 
 @media only screen and (max-width: 767px) {
 
+  body { font-size: 16px; }
+
+  .title-box h1 {
+    font-size: 250%;
+    letter-spacing: 25px;
+  }
+
+  .profile img {
+    display: block;
+    float: none;
+    margin: auto;
+  }
+
+  .profile p {
+    display: block;
+    float: none;
+    margin: 20px 0;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .project-photo h2 {
+    font-size: 100%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  
+  body { font-size: 14px; }
 
+  .title-box h1 {
+    font-size: 150%;
+    letter-spacing: 25px;
+  }
 }
