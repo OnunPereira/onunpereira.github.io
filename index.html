@@ -10,14 +10,15 @@
   <title>Nuno Pereira</title>
 </head>
 <body>
-  <header>
+  <header id="home">
     <nav>
       <div class="row">
-        <ul class="main-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contacts</a></li>
+        <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+        <ul class="main-nav js--main-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#whoami">About Me</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#media">Contacts</a></li>
         </ul>
       </div>
     </nav>
@@ -28,7 +29,7 @@
       </div>
     </div>
   </header>
-  <section class="section-whoami" id="whoami">
+  <section class="section-whoami js--section-whoami" id="whoami">
     <div class="row section-title">
       <i class="ion-chevron-right icon-title"></i>
       <h2>whoami</h2>
@@ -37,7 +38,7 @@
       <div class="profile clearfix">
         <img src="resources/img/profile_pic-min.png" alt="random user">
         <p>
-          I’m Nuno Pereira, a 26-year-old dude raised in Viseu, Portugal. I'm passionate about programming and logic challenges.
+          I’m <strong>Nuno Pereira</strong>, a 26-year-old dude raised in Viseu, Portugal. I'm passionate about programming and logic challenges.
           <br>
           I tend to follow a minimalist lifestyle, meaning I shove all the unnecessary things out of my life to focus on what's really important: my friends and family, my hobbies and passions.
           <br>
@@ -46,7 +47,7 @@
       </div>
     </div>
   </section>
-  <section class="section-projects">
+  <section class="section-projects" id="projects">
     <div class="row">
       <ul class="showcase clearfix">
         <li>
@@ -54,7 +55,7 @@
             <a href="https://github.com/OnunPereira/Pong-alike" target="_blank">
               <img src="resources/img/pong-alike.png" alt="Pong-Alike">
               <div>
-                <h2>Pong-Alike</h2>
+                <h2>Pong&mdash;Alike</h2>
               </div>
             </a>
           </div>
@@ -64,7 +65,7 @@
             <a href="https://github.com/OnunPereira/Color-Walk" target="_blank">
               <img src="resources/img/color_walk.png" alt="Color Walk">
               <div>
-                <h2>Color-Walk</h2>
+                <h2>Color&mdash;Walk</h2>
               </div>
             </a>
           </div>
@@ -82,12 +83,20 @@
       </ul>
     </div>
   </section>
-  <footer>
+  <footer id="media">
     <div class="row flex">
       <div class="media">
-        <p>Feel free to reach me out via</p><a class="media-link" href="https://www.linkedin.com/in/onunpereira/" target="_blank"><i class="ion-social-linkedin"></i></a><a class="media-link" href="https://github.com/OnunPereira" target="_blank"><i class="ion-social-github"></i></a>
+        <p>Contact me through</p>
+        <ul class="media-links">
+          <li><a class="media-link" href="https://www.linkedin.com/in/onunpereira/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+          <li><a class="media-link" href="https://github.com/OnunPereira" target="_blank"><i class="ion-social-github"></i></a></li>
+        </ul>
       </div>
     </div>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.js"></script>
 </body>
 </html>
