@@ -1,33 +1,37 @@
 @media only screen and (max-width: 1200px) {
   .row { padding: 0 2%; }
+  .project-photo h2 { font-size: 120%; }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
 
   body { font-size: 18px; }
 
-  .main-nav li {
-    margin-left: 0;
-  }
+  section { margin-top: 90px; }
 
-  .profile img {
-    max-width: 180px;
-  }
+  .main-nav li { margin-left: 0; }
+
+  .profile { margin: 50px 40px 70px 40px; }
+
+  .profile img { max-width: 180px; }
+
+  .project-photo h2 { font-size: 110%; }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
-  body { font-size: 16px; }
+  body { font-size: 17px; }
 
-  .title-box h1 {
-    font-size: 250%;
-    letter-spacing: 25px;
-  }
+  section { margin-top: 80px; }
+
+  .title-box h1 { font-size: 250%; }
+
+  .profile { margin: 45px 30px 60px 30px; }
 
   .profile img {
     display: block;
     float: none;
-    margin: auto;
+    margin: 5% auto;
   }
 
   .profile p {
@@ -39,17 +43,20 @@
   }
 
   .project-photo h2 {
-    font-size: 100%;
+    font-size: 140%;
+  }
+
+  .showcase li {
+    width: 50%;
   }
 }
 
 @media only screen and (max-width: 480px) {
   
-  body { font-size: 14px; }
+  body { font-size: 15px; }
 
   .title-box h1 {
-    font-size: 150%;
-    letter-spacing: 20px;
+    font-size: 200%;
   }
 
   .title-box h6 {
@@ -57,7 +64,7 @@
   }
 
   .project-photo h2 {
-    font-size: 85%;
+    font-size: 110%;
   }
 
   .icon-title {

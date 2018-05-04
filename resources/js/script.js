@@ -72,4 +72,15 @@ $(document).ready(function () {
     if ($('.js--nav-icon').css('display') !== 'none')
       $('.js--nav-icon').trigger('click');
   });
+
+
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'disableScrolling': true
+  });
+
+  $('.project-photo a').on('click', function() {
+    $('body').css({'overflow': 'hidden !important', 'height': '100% !important'});
+  });
 });
