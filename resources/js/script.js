@@ -11,47 +11,6 @@ $(document).ready(function () {
     offset: '10%'
   });
 
-  /* Navigation scroll */
-  $(function () {
-    $('a[href*="#"]:not([href="#"])').click(function () {
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top - $(this).outerHeight(true)
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  });
-
-  /* Animation on scroll */
-  $('.js--wp-1').waypoint(function (direction) {
-    $('.js--wp-1').addClass('animated fadeIn');
-  }, {
-    offset: '50%'
-  });
-
-  $('.js--wp-2').waypoint(function (direction) {
-    $('.js--wp-2').addClass('animated fadeInUp');
-  }, {
-    offset: '50%'
-  });
-
-  $('.js--wp-3').waypoint(function (direction) {
-    $('.js--wp-3').addClass('animated fadeIn');
-  }, {
-    offset: '50%'
-  });
-
-  $('.js--wp-4').waypoint(function (direction) {
-    $('.js--wp-4').addClass('animated pulse');
-  }, {
-    offset: '50%'
-  });
-
   // Mobile navigation
   $('.js--nav-icon').click(function () {
     var nav = $('.js--main-nav');
@@ -68,7 +27,7 @@ $(document).ready(function () {
     }
   });
 
-  $('.js--main-nav a').on('click', function() {
+  $('.js--main-nav a').on('click', function () {
     if ($('.js--nav-icon').css('display') !== 'none')
       $('.js--nav-icon').trigger('click');
   });
@@ -80,7 +39,25 @@ $(document).ready(function () {
     'disableScrolling': true
   });
 
-  $('.project-photo a').on('click', function() {
-    $('body').css({'overflow': 'hidden !important', 'height': '100% !important'});
+  $('.project-photo a').on('click', function () {
+    $('body').css({
+      'overflow': 'hidden !important',
+      'height': '100% !important'
+    });
   });
 });
+
+let anchorlinks = document.querySelectorAll('a[href^="#"]')
+
+for (let item of anchorlinks) { // relitere 
+  item.addEventListener('click', (e) => {
+    let hashval = item.getAttribute('href')
+    let target = document.querySelector(hashval)
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+    history.pushState(null, null, hashval)
+    e.preventDefault()
+  })
+}
