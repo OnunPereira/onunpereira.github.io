@@ -1,0 +1,15 @@
+{
+  "name": "onunpereira.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:OnunPereira/onunpereira.github.io.git",
+  "author": "onunpereira <nuno.pereira.as@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@mdi/font": "^3.6.95",
+    "jquery": "^3.4.0"
+  },
+  "scripts": {
+    "dev": "parcel index.html -p 8080"
+  }
+}
